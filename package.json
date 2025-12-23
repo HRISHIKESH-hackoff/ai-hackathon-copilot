@@ -1,0 +1,19 @@
+{
+  "name": "ai-hackathon-copilot",
+  "version": "1.0.0",
+  "description": "AI-powered hackathon planning and collaboration platform",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "node server/index.js"
+  },
+  "keywords": ["hackathon", "AI", "collaboration"],
+  "author": "HRISHIKESH-hackoff",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
